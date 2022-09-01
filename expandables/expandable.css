@@ -1,0 +1,38 @@
+.expandable {
+  margin: 0;
+  padding: 0 0.5em;
+  border: 1px dotted;
+}
+
+.expandable p {
+  margin: 1.286em auto;
+  line-height: 1.5;
+}
+
+.expandStart {
+  text-decoration: underline 1px dotted;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.25em;
+  width: max-content;
+}
+
+.expandEnd {
+  display: none;
+}
+
+.expanded::before {
+  content: "\25B2 ";
+}
+
+.collapsed::before {
+  content: "\25BC ";
+}
+
+.expanded::after {
+  content: none;
+}
+
+.collapsed::after {
+  content: none;
+}
